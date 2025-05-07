@@ -8,137 +8,125 @@
     <title>navtabs and pagination</title>
 </head>
 <body>
+   <section>
     <div class="container my-5">
         <div class="row">
             <div class="col-2">
-                <ul class="nav nav-tabs gap-2">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link" data-bs-toggle="tab">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#feature" class="nav-link" data-bs-toggle="tab">features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#product" class="nav-link" data-bs-toggle="tab">product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link" data-bs-toggle="tab">contact</a>
-                    </li>
-                    <button class="btn btn-primary btn-sm"> Sign In</button>
-                </ul>
+                    <ul class="nav flex-column nav-pills gap-2">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" data-bs-toggle="tab">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#feature" class="nav-link" data-bs-toggle="tab">features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#product" class="nav-link" data-bs-toggle="tab">product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" data-bs-toggle="tab">contact</a>
+                        </li>
+                        <button class="btn btn-primary btn-sm"> Sign In</button>
+                    </ul>
             </div>
             <div class="col-10">
-             <div class="container my-5">
-            <div class="row">
-                <div class="col-6">
-                    <div class="tab-content">
-                        <div class="tab-pan show active fade" id="home">
-                            <div class="card">
-                                <div class="card-img-top">
+                        <div class="tab-content">
+                            <div class="tab-pan show active fade" id="home">
+                                <div class="row g-0 border rounded">
+                                    <div class="col-3">
                                         <img  class="img-fluid"  src="https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg?cs=srgb&dl=pexels-pixabay-36762.jpg&fm=jpg" alt="">
-                                </div>
-                                <div class="card-header">
-                                       <h2> nature love</h2>
-                                </div>
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem nemo aut sed, magnam ut blanditiis? Vitae ipsum harum quas esse provident! Aliquid, architecto quo. Illo.
-                                </div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">view all</button>
-                                </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="card border-0">
+                                            <div class="card-header">
+                                                <h2> nature love</h2>
+                                            </div>
+                                            <p class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet numquam ex quidem obcaecati, ratione soluta harum reiciendis. Quis alias eius iste, ipsa excepturi quo non. Itaque incidunt delectus iure!
+                                            </p>
+                                            <div class="card-footer">
+                                                    <button class="btn btn-success">view all</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="tab-content">
-                        <div class="tab-pan fade" id="about">
-                            <div class="card">
-                                <div class="card-img-top">
-                                        <img  class="img-fluid"  src="https://wallpapers.com/images/featured/hd-nature-ngdfb9h966h4z3le.jpg" alt="">
-                                </div>
-                                <div class="card-header">
-                                       <h2> human </h2>
-                                </div>
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem nemo aut sed, magnam ut blanditiis? Vitae ipsum harum quas esse provident! Aliquid, architecto quo. Illo.
-                                </div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">view all</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="tab-content">
-                        <div class="tab-pan fade" id="feature">
-                            <div class="card">
-                                <div class="card-img-top">
-                                        <img  class="img-fluid"  src="https://www.hdwallpapers.in/download/lake_with_reflection_of_mountain_and_clouds_4k_hd_nature-HD.jpg" alt="">
-                                </div>
-                                <div class="card-header">
-                                       <h2>rainbow</h2>
-                                </div>
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem nemo aut sed, magnam ut blanditiis? Vitae ipsum harum quas esse provident! Aliquid, architecto quo. Illo.
-                                </div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">view all</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="tab-content">
-                        <div class="tab-pan fade" id="product">
-                            <div class="card">
-                                <div class="card-img-top">
+                        <div class="tab-content">
+                            <div class="tab-pan  fade" id="about">
+                                <div class="row g-0 border rounded">
+                                    <div class="col-3">
                                         <img  class="img-fluid"  src="https://www.lg.com/content/dam/channel/wcms/in/magazine/heres-an-insight-into-hd-tv-and-uhd-tv-should-you-upgrade/heres-an-insight-into-hd-tv-and-uhd-tv-should-you-upgrade-01-D.jpg" alt="">
-                                </div>
-                                <div class="card-header">
-                                       <h2> cloud</h2>
-                                </div>
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem nemo aut sed, magnam ut blanditiis? Vitae ipsum harum quas esse provident! Aliquid, architecto quo. Illo.
-                                </div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">view all</button>
-                                </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="card border-0">
+                                            <div class="card-header">
+                                                <h2> nature love</h2>
+                                            </div>
+                                            <p class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet numquam ex quidem obcaecati, ratione soluta harum reiciendis. Quis alias eius iste, ipsa excepturi quo non. Itaque incidunt delectus iure!
+                                            </p>
+                                            <div class="card-footer">
+                                                    <button class="btn btn-success">view all</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="tab-content">
-                        <div class="tab-pan  fade" id="contact">
-                            <div class="card">
-                                <div class="card-img-top">
+                        <div class="tab-content">
+                            <div class="tab-pan  fade" id="feature">
+                                <div class="row g-0 border rounded">
+                                    <div class="col-3">
                                         <img  class="img-fluid"  src="https://thumbs.dreamstime.com/b/polar-bear-wallpaper-hd-wallpapers-ai-polar-bear-wallpaper-hd-wallpapers-297800380.jpg" alt="">
-                                </div>
-                                <div class="card-header">
-                                       <h2>all</h2>
-                                </div>
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem nemo aut sed, magnam ut blanditiis? Vitae ipsum harum quas esse provident! Aliquid, architecto quo. Illo.
-                                </div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">view all</button>
-                                </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="card border-0">
+                                            <div class="card-header">
+                                                <h2> nature love</h2>
+                                            </div>
+                                            <p class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet numquam ex quidem obcaecati, ratione soluta harum reiciendis. Quis alias eius iste, ipsa excepturi quo non. Itaque incidunt delectus iure!
+                                            </p>
+                                            <div class="card-footer">
+                                                    <button class="btn btn-success">view all</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="tab-content">
+                            <div class="tab-pan fade" id="feature">
+                                <div class="row g-0 border rounded">
+                                    <div class="col-3">
+                                        <img  class="img-fluid"  src="https://www.hdwallpapers.in/download/lake_with_reflection_of_mountain_and_clouds_4k_hd_nature-HD.jpg" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="card border-0">
+                                            <div class="card-header">
+                                                <h2> nature love</h2>
+                                            </div>
+                                            <p class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet numquam ex quidem obcaecati, ratione soluta harum reiciendis. Quis alias eius iste, ipsa excepturi quo non. Itaque incidunt delectus iure!
+                                            </p>
+                                            <div class="card-footer">
+                                                    <button class="btn btn-success">view all</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                      
             </div>
-           </div>   
-            </div>
-             
-        </div>
-          
+        </div>    
     </div>
+   </section>
+
+
+
 </body>
 </html>
