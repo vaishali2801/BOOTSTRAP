@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <title>toast</title>
+    <style>
+        .notify{
+            animation: notify 3s linear;
+        }
+
+        @keyframes notify {
+            from{
+                width:100%
+            }
+            to{
+                width: 0%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <button class="btn btn-success btn-lg" id="notification">Notification</button>
+
+        <div class="toast-container position-fixed start-0 bottom-0 my-4">
+            <div class="toast" id="notify">
+                <div class="toast-header bg-dark text-light">
+                    <strong class="me-auto"> your notification</strong>
+                    <small>9 mins ago</small>
+                    <button class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    Hello sir, your balance is 299/- per month please recharge 
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+      <div class="container">
+        <div id="navscroll fade" class="nav nav-pills">
+            <a href="#Home" class="nav-link active show">Home</a>
+            <a href="#About" class="nav-link">About</a>
+            <a href="#Feature" class="nav-link">Feature</a>
+            <a href="#Product" class="nav-link">Product</a>
+        </div>
+
+        <div class="scroll-spy border overflow-auto" data-bs-target="#navscroll" data-bs-smooth-scroll="true" data-bs-spy="scroll" style="height: 250px;">
+            <div class="my-3 p-2" id="home">
+                <h3>Home</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+            </div>
+            <div class="my-3 p-2" id="About">
+                <h3>Home</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+            </div>
+            <div class="my-3 p-2" id="Feature">
+                <h3>Home</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+            </div>
+            <div class="my-3 p-2" id="Product">
+                <h3>Home</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis aliquam iste commodi temporibus. Corrupti velit facilis exercitationem neque doloremque architecto ab? Quos, minus saepe.</p>
+            </div>
+
+        </div>
+      </div>
+           
+    </header>
+
+</body>
+<script>
+    const toastTrigger = document.getElementById('notification')
+    const toastLiveExample = document.getElementById('notify')
+
+    if (toastTrigger) {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    toastTrigger.addEventListener('click', () => {
+        toastBootstrap.show()
+    })
+    }
+
+
+// setTimeout(()=>{
+//     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+//   toastTrigger.addEventListener('click', () => {
+//     toastBootstrap.hide()
+//   })
+// }, 3000)
+</script>
+</html>
